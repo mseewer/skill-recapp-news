@@ -1,0 +1,19 @@
+{
+    "default news": "https://www.srf.ch/news/bnf/rss/1646",
+    "news schweiz": "https://www.srf.ch/news/bnf/rss/1890",
+    "news aargau solothurn": "https://www.srf.ch/news/bnf/rss/1986",
+    "news basel baselland": "https://www.srf.ch/news/bnf/rss/1982",
+    "news bern freiburg wallis": "https://www.srf.ch/news/bnf/rss/1978",
+    "news graubünden": "https://www.srf.ch/news/bnf/rss/1974",
+    "news zentralschweiz": "https://www.srf.ch/news/bnf/rss/1966",
+    "news zürich schaffhausen": "https://www.srf.ch/news/bnf/rss/1958",
+    "news international": "https://www.srf.ch/news/bnf/rss/1922",
+    "news wirtschaft": "https://www.srf.ch/news/bnf/rss/1926",
+    "news panorama": "https://www.srf.ch/news/bnf/rss/1930",
+    "default sport": "https://www.srf.ch/sport/bnf/rss/718",
+    "sport fussball": "https://www.srf.ch/sport/bnf/rss/2562",
+    "sport eishockey": "https://www.srf.ch/sport/bnf/rss/3418",
+    "sport tennis": "https://www.srf.ch/sport/bnf/rss/2814",
+    "sport ski alpin": "https://www.srf.ch/sport/bnf/rss/787950",
+    "sport motorsport": "https://www.srf.ch/sport/bnf/rss/2958"
+}
