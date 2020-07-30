@@ -24,8 +24,13 @@ class SkillRecappNews(MycroftSkill):
         self.articles = self.extract_articles(self.feed_structure)
         self.titles = self.extract_titles(self.articles)
         self.speak_dialog('news.start')
+
+        counter = 0
         for title in self.titles:
             self.speak(title)
+            counter += 1
+            if (counter >= 5): # only read first 5 titles
+                break
 
     def select_feed(self, message):
         # TODO
@@ -33,14 +38,11 @@ class SkillRecappNews(MycroftSkill):
 
     def read_xml_to_dict(self, feed_url):
         response = requests.get(feed_url)
-        return xmltodict.parse(response.content)
+        return ET.fromstring(response.content)
 
     def extract_articles(self, feed_structure):
-        response = requests.get("https://www.srf.ch/news/bnf/rss/1646")
-        root = ET.fromstring(response.content)
+        return [item for item in feed_structure.iter('item')]
 
-        return [item for item in root.iter('item')]
-    
     def extract_titles(self, articles):
         return [title.find("title").text for title in articles]
 
